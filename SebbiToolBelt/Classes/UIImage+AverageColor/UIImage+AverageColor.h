@@ -11,6 +11,5 @@
 @interface UIImage (AverageColor)
 
 -(UIColor *) stb_averageColor;
--(UIColor *)stb_exactAverageColor;
 
 @end

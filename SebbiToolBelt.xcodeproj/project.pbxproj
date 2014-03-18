@@ -68,6 +68,8 @@
 		28E54CE118D7E25100795E6C /* UIColor+Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE018D7E25100795E6C /* UIColor+Brightness.m */; };
 		28E54CE218D7E25100795E6C /* UIColor+Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE018D7E25100795E6C /* UIColor+Brightness.m */; };
 		28E54CE418D7E2F700795E6C /* UIColor+BrightnessTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE318D7E2F700795E6C /* UIColor+BrightnessTest.m */; };
+		28E54CE718D7E7D300795E6C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE618D7E7D300795E6C /* UIColor+Hex.m */; };
+		28E54CE818D7E7D300795E6C /* UIColor+Hex.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE618D7E7D300795E6C /* UIColor+Hex.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -127,6 +129,8 @@
 		28E54CDF18D7E25100795E6C /* UIColor+Brightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Brightness.h"; sourceTree = "<group>"; };
 		28E54CE018D7E25100795E6C /* UIColor+Brightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Brightness.m"; sourceTree = "<group>"; };
 		28E54CE318D7E2F700795E6C /* UIColor+BrightnessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrightnessTest.m"; sourceTree = "<group>"; };
+		28E54CE518D7E7D300795E6C /* UIColor+Hex.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Hex.h"; sourceTree = "<group>"; };
+		28E54CE618D7E7D300795E6C /* UIColor+Hex.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Hex.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -270,6 +274,8 @@
 		286A2AAD18D41009009385DF /* UIColor+Hex */ = {
 			isa = PBXGroup;
 			children = (
+				28E54CE518D7E7D300795E6C /* UIColor+Hex.h */,
+				28E54CE618D7E7D300795E6C /* UIColor+Hex.m */,
 			);
 			path = "UIColor+Hex";
 			sourceTree = "<group>";
@@ -438,6 +444,7 @@
 				286A2AB318D4102A009385DF /* UIImage+BoxBlur.m in Sources */,
 				286A2A8D18D40E52009385DF /* AppDelegate.m in Sources */,
 				28E54CDB18D7DE7700795E6C /* UIColor+Opposite.m in Sources */,
+				28E54CE718D7E7D300795E6C /* UIColor+Hex.m in Sources */,
 				286A2A8918D40E52009385DF /* main.m in Sources */,
 				286A2AB718D41155009385DF /* UIImage+AverageColor.m in Sources */,
 			);
@@ -451,6 +458,7 @@
 				28E54CE218D7E25100795E6C /* UIColor+Brightness.m in Sources */,
 				286A2AB418D4102A009385DF /* UIImage+BoxBlur.m in Sources */,
 				28E54CDE18D7DF4800795E6C /* UIColor+OppositeTest.m in Sources */,
+				28E54CE818D7E7D300795E6C /* UIColor+Hex.m in Sources */,
 				28E54CE418D7E2F700795E6C /* UIColor+BrightnessTest.m in Sources */,
 				28E54CDC18D7DE7700795E6C /* UIColor+Opposite.m in Sources */,
 				286A2AA218D40E52009385DF /* SebbiToolBeltTests.m in Sources */,

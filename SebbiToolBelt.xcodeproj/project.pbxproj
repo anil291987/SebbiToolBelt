@@ -65,6 +65,9 @@
 		28E54CDB18D7DE7700795E6C /* UIColor+Opposite.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CDA18D7DE7700795E6C /* UIColor+Opposite.m */; };
 		28E54CDC18D7DE7700795E6C /* UIColor+Opposite.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CDA18D7DE7700795E6C /* UIColor+Opposite.m */; };
 		28E54CDE18D7DF4800795E6C /* UIColor+OppositeTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CDD18D7DF4800795E6C /* UIColor+OppositeTest.m */; };
+		28E54CE118D7E25100795E6C /* UIColor+Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE018D7E25100795E6C /* UIColor+Brightness.m */; };
+		28E54CE218D7E25100795E6C /* UIColor+Brightness.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE018D7E25100795E6C /* UIColor+Brightness.m */; };
+		28E54CE418D7E2F700795E6C /* UIColor+BrightnessTest.m in Sources */ = {isa = PBXBuildFile; fileRef = 28E54CE318D7E2F700795E6C /* UIColor+BrightnessTest.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -121,6 +124,9 @@
 		28E54CD918D7DE7700795E6C /* UIColor+Opposite.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Opposite.h"; sourceTree = "<group>"; };
 		28E54CDA18D7DE7700795E6C /* UIColor+Opposite.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Opposite.m"; sourceTree = "<group>"; };
 		28E54CDD18D7DF4800795E6C /* UIColor+OppositeTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+OppositeTest.m"; sourceTree = "<group>"; };
+		28E54CDF18D7E25100795E6C /* UIColor+Brightness.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+Brightness.h"; sourceTree = "<group>"; };
+		28E54CE018D7E25100795E6C /* UIColor+Brightness.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+Brightness.m"; sourceTree = "<group>"; };
+		28E54CE318D7E2F700795E6C /* UIColor+BrightnessTest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+BrightnessTest.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -207,6 +213,7 @@
 				286A2A9C18D40E52009385DF /* Supporting Files */,
 				286A2AB918D413A6009385DF /* UIImage+AverageColorTest.m */,
 				28E54CDD18D7DF4800795E6C /* UIColor+OppositeTest.m */,
+				28E54CE318D7E2F700795E6C /* UIColor+BrightnessTest.m */,
 			);
 			path = SebbiToolBeltTests;
 			sourceTree = "<group>";
@@ -254,6 +261,8 @@
 		286A2AAC18D41009009385DF /* UIColor+Brightness */ = {
 			isa = PBXGroup;
 			children = (
+				28E54CDF18D7E25100795E6C /* UIColor+Brightness.h */,
+				28E54CE018D7E25100795E6C /* UIColor+Brightness.m */,
 			);
 			path = "UIColor+Brightness";
 			sourceTree = "<group>";
@@ -425,6 +434,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				28E54CE118D7E25100795E6C /* UIColor+Brightness.m in Sources */,
 				286A2AB318D4102A009385DF /* UIImage+BoxBlur.m in Sources */,
 				286A2A8D18D40E52009385DF /* AppDelegate.m in Sources */,
 				28E54CDB18D7DE7700795E6C /* UIColor+Opposite.m in Sources */,
@@ -438,8 +448,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				286A2AB818D41155009385DF /* UIImage+AverageColor.m in Sources */,
+				28E54CE218D7E25100795E6C /* UIColor+Brightness.m in Sources */,
 				286A2AB418D4102A009385DF /* UIImage+BoxBlur.m in Sources */,
 				28E54CDE18D7DF4800795E6C /* UIColor+OppositeTest.m in Sources */,
+				28E54CE418D7E2F700795E6C /* UIColor+BrightnessTest.m in Sources */,
 				28E54CDC18D7DE7700795E6C /* UIColor+Opposite.m in Sources */,
 				286A2AA218D40E52009385DF /* SebbiToolBeltTests.m in Sources */,
 				286A2ABA18D413A6009385DF /* UIImage+AverageColorTest.m in Sources */,

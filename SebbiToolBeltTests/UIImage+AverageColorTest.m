@@ -114,7 +114,7 @@
         // Allow a 1% difference from it...
         UIColor *avgColor = [[UIImage imageNamed:@"BlackAndWhite.png"] stb_averageColor];
         UIColor *expectedColor = [UIColor colorWithWhite:0.42 alpha:1.0f];
-        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"BlackAndWhite.png");
+        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"BlackAndWhite.png avgColor:%@ expectedColor:%@", avgColor, expectedColor);
     }
 
 

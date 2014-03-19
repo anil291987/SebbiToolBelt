@@ -52,16 +52,15 @@
 
 -(void) testAverageColor
 {
-    return;
     NSArray *tests = @[
                         @[ [UIImage imageNamed:@"whiteRGBA.png"], [UIColor colorWithRed:1.0 green:1.0 blue:1.0 alpha:1.0] ],
                         @[ [UIImage imageNamed:@"blackRGBA.png"], [UIColor colorWithRed:0.0 green:0.0 blue:0.0 alpha:1.0] ],
                         @[ [UIImage imageNamed:@"midgrayRGBA.png"], [UIColor colorWithRed:0x80/255.0f green:0x80/255.0f blue:0x80/255.0f alpha:1.0] ],
                         @[ [UIImage imageNamed:@"white.png"], [UIColor whiteColor]],
                         @[ [UIImage imageNamed:@"black.png"], [UIColor blackColor]],
-                        @[ [UIImage imageNamed:@"red.png"], [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0] ],
-                        @[ [UIImage imageNamed:@"green.png"], [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0] ],
-                        @[ [UIImage imageNamed:@"blue.png"], [UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0] ],
+                        @[ [UIImage imageNamed:@"redRGBA.png"], [UIColor colorWithRed:1.0 green:0.0 blue:0.0 alpha:1.0] ],
+                        @[ [UIImage imageNamed:@"greenRGBA.png"], [UIColor colorWithRed:0.0 green:1.0 blue:0.0 alpha:1.0] ],
+                        @[ [UIImage imageNamed:@"blueRGBA.png"], [UIColor colorWithRed:0.0 green:0.0 blue:1.0 alpha:1.0] ],
                     ];
     
     for (NSArray *arr in tests) {

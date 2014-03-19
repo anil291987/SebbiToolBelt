@@ -18,7 +18,6 @@
 		286A2A9718D40E52009385DF /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286A2A7C18D40E52009385DF /* Foundation.framework */; };
 		286A2A9818D40E52009385DF /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 286A2A8018D40E52009385DF /* UIKit.framework */; };
 		286A2AA018D40E52009385DF /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 286A2A9E18D40E52009385DF /* InfoPlist.strings */; };
-		286A2AA218D40E52009385DF /* SebbiToolBeltTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A2AA118D40E52009385DF /* SebbiToolBeltTests.m */; };
 		286A2AB318D4102A009385DF /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A2AB218D4102A009385DF /* UIImage+BoxBlur.m */; };
 		286A2AB418D4102A009385DF /* UIImage+BoxBlur.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A2AB218D4102A009385DF /* UIImage+BoxBlur.m */; };
 		286A2AB718D41155009385DF /* UIImage+AverageColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 286A2AB618D41155009385DF /* UIImage+AverageColor.m */; };
@@ -98,7 +97,6 @@
 		286A2A9518D40E52009385DF /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
 		286A2A9D18D40E52009385DF /* SebbiToolBeltTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SebbiToolBeltTests-Info.plist"; sourceTree = "<group>"; };
 		286A2A9F18D40E52009385DF /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		286A2AA118D40E52009385DF /* SebbiToolBeltTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SebbiToolBeltTests.m; sourceTree = "<group>"; };
 		286A2AB118D4102A009385DF /* UIImage+BoxBlur.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+BoxBlur.h"; sourceTree = "<group>"; };
 		286A2AB218D4102A009385DF /* UIImage+BoxBlur.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+BoxBlur.m"; sourceTree = "<group>"; };
 		286A2AB518D41155009385DF /* UIImage+AverageColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+AverageColor.h"; sourceTree = "<group>"; };
@@ -213,7 +211,6 @@
 		286A2A9B18D40E52009385DF /* SebbiToolBeltTests */ = {
 			isa = PBXGroup;
 			children = (
-				286A2AA118D40E52009385DF /* SebbiToolBeltTests.m */,
 				286A2A9C18D40E52009385DF /* Supporting Files */,
 				286A2AB918D413A6009385DF /* UIImage+AverageColorTest.m */,
 				28E54CDD18D7DF4800795E6C /* UIColor+OppositeTest.m */,
@@ -461,7 +458,6 @@
 				28E54CE818D7E7D300795E6C /* UIColor+Hex.m in Sources */,
 				28E54CE418D7E2F700795E6C /* UIColor+BrightnessTest.m in Sources */,
 				28E54CDC18D7DE7700795E6C /* UIColor+Opposite.m in Sources */,
-				286A2AA218D40E52009385DF /* SebbiToolBeltTests.m in Sources */,
 				286A2ABA18D413A6009385DF /* UIImage+AverageColorTest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -528,7 +524,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 			};
@@ -560,7 +556,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -574,6 +570,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SebbiToolBelt/SebbiToolBelt-Prefix.pch";
 				INFOPLIST_FILE = "SebbiToolBelt/SebbiToolBelt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -587,6 +584,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SebbiToolBelt/SebbiToolBelt-Prefix.pch";
 				INFOPLIST_FILE = "SebbiToolBelt/SebbiToolBelt-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

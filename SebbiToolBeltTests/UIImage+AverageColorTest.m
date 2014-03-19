@@ -76,15 +76,15 @@
     
     {   // Note, expectedColor is the average color computed with photoshop.
         // Allow a 1% difference from it...
-        UIColor *avgColor = [[UIImage imageNamed:@"duck.jpg"] stb_averageColor];
+        UIColor *avgColor = [[UIImage imageNamed:@"duckRGB.jpg"] stb_averageColor];
         UIColor *expectedColor = [UIColor colorWithRed:100/255.0f green:92/255.0f blue:92/255.0f alpha:1.0];
-        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"duck.jpg");
+        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"duckRGB.jpg");
     }
     {   // Note, expectedColor is the average color computed with photoshop.
         // Allow a 1% difference from it...
-        UIColor *avgColor = [[UIImage imageNamed:@"halfbluehalfred.png"] stb_averageColor];
+        UIColor *avgColor = [[UIImage imageNamed:@"halfbluehalfredRGBA.png"] stb_averageColor];
         UIColor *expectedColor = [UIColor colorWithRed:127/255.0f green:0.0f blue:127/255.0f alpha:1.0];
-        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"halfbluehalfred.png");
+        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"halfbluehalfredRGBA.png");
     }
     {   // Note, expectedColor is the average color computed with photoshop.
         // Allow a 1% difference from it...

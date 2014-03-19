@@ -29,25 +29,47 @@
 
 -(BOOL) compareColor:(UIColor *)c1 withColor:(UIColor *)c2 withTolerance:(CGFloat)errorRate
 {
-    CGFloat r1,g1,b1,a1;
-    CGFloat r2,g2,b2,a2;
+    if (CGColorGetNumberOfComponents(c1.CGColor) != CGColorGetNumberOfComponents(c2.CGColor)) {
+        return false;
+    }
     
-    [c1 getRed:&r1 green:&g1 blue:&b1 alpha:&a1];
-    [c2 getRed:&r2 green:&g2 blue:&b2 alpha:&a2];
-    
-    if (fabs(r1-r2) > errorRate) {
-        return NO;
+    if (CGColorGetNumberOfComponents(c1.CGColor) >= 3) {
+        CGFloat r1,g1,b1,a1;
+        CGFloat r2,g2,b2,a2;
+        
+        [c1 getRed:&r1 green:&g1 blue:&b1 alpha:&a1];
+        [c2 getRed:&r2 green:&g2 blue:&b2 alpha:&a2];
+        
+        if (fabs(r1-r2) > errorRate) {
+            return NO;
+        }
+        if (fabs(g1-g2) > errorRate) {
+            return NO;
+        }
+        if (fabs(b1-b2) > errorRate) {
+            return NO;
+        }
+        if (fabs(a1-a2) > errorRate) {
+            return NO;
+        }
+        return YES;
+    } else {
+        // B+W
+        CGFloat w1, a1;
+        CGFloat w2, a2;
+        
+        [c1 getWhite:&w1 alpha:&a1];
+        [c2 getWhite:&w2 alpha:&a2];
+        
+        if (fabs(w1-w2) > errorRate) {
+            return NO;
+        }
+        
+        if (fabs(a1-a2) > errorRate) {
+            return NO;
+        }
+        return YES;
     }
-    if (fabs(g1-g2) > errorRate) {
-        return NO;
-    }
-    if (fabs(b1-b2) > errorRate) {
-        return NO;
-    }
-    if (fabs(a1-a2) > errorRate) {
-        return NO;
-    }
-    return YES;
 }
 
 -(void) testAverageColor
@@ -116,13 +138,11 @@
         UIColor *expectedColor = [UIColor colorWithRed:0.42 green:0.42 blue:0.42 alpha:1.0];
         XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.01], @"BlackAndWhite.png avgColor:%@ expectedColor:%@", avgColor, expectedColor);
     }
-
-
     {   // Note, expectedColor is the average color computed with photoshop.
         // Allow a 1% difference from it...
-        //UIColor *avgColor = [[UIImage imageNamed:@"BlackAndWhiteSmall.png"] stb_averageColor];
-        //UIColor *expectedColor = [UIColor colorWithWhite:0.42 alpha:1.0];
-        //XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.015], @"BlackAndWhiteSmall.png avgColor:%@ expectedColor:%@", avgColor, expectedColor);
+        UIColor *avgColor = [[UIImage imageNamed:@"BlackAndWhiteSmall.png"] stb_averageColor];
+        UIColor *expectedColor = [UIColor colorWithWhite:0.42 alpha:1.0];
+        XCTAssertTrue([self compareColor:avgColor withColor:expectedColor withTolerance:0.015], @"BlackAndWhiteSmall.png avgColor:%@ expectedColor:%@", avgColor, expectedColor);
     }
     
 }
